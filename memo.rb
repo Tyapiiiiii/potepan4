@@ -16,8 +16,8 @@ while true do
             csv << [memo_content]
         end
         
-        puts "新しいメモを作成しました。" # ①先にメッセージを表示！
-        break                           # ②それからループを抜ける！
+        puts "新しいメモを作成しました。" # ①先にメッセージを表示
+        break                           # ②それからループを抜ける
 
     elsif memo_type == 2
         puts "編集したいファイル名を入力してください。（拡張子は不要です）"
@@ -30,11 +30,11 @@ while true do
             csv << [memo_content]
         end
         
-        puts "メモを編集しました。" # ①先にメッセージを表示！
-        break                     # ②それからループを抜ける！
+        puts "メモを編集しました。" # ①先にメッセージを表示
+        break                     # ②それからループを抜ける
 
     else
         puts "1か2を入力してください。"
-        # ここは break しないので、自動的に while の最初（メニュー表示）に戻ります！
+        # ここは break しないので、自動的に while の最初（メニュー表示）に戻ります
     end
 end
